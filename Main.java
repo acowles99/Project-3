@@ -1,14 +1,21 @@
-class Main {
+import java.util.Scanner;
+
+class Main 
+{
+
   public static void main(String[] args) {
    int [] seatNumbers = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
-   String [] elements = {"Fast", "Adventurous", "Daring", "Happy", "Intellegent", "Patient","Skillful", "Mighty", "Dedicated","Creative","Loyal", "Humble", "Wise", "Tall", "Elegant"};
+   String [] element = {"Fast", "Adventurous", "Daring", "Happy", "Intellegent", "Patient","Skillful", "Mighty", "Dedicated","Creative","Loyal", "Humble", "Wise", "Tall", "Elegant"};
+   //elements
 
-   for(int i = 0; i < elements.length; i++)
+   Scanner scan = new Scanner (System.in);
+   System.out.println("Please enter your name");
+   String name = scan.next();
+   for(int i = 0; i < 15; i++)
    {
-     Scanner name = new Scanner (System.in);
-     System.out.println("Please enter your name");
-     String nameEntered
-     System.out.println(elements[i]);
+    System.out.println(element[i] + " " + name);
    }
+   
+   
   }
 }
